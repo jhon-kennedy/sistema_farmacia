@@ -1,0 +1,109 @@
+/* ============================================================
+   ESTILOS GLOBALES - SISTEMA FARMACIA
+   ============================================================ */
+
+:root {
+  --primary: #0d6efd;
+  --success: #198754;
+  --danger:  #dc3545;
+  --warning: #ffc107;
+  --sidebar-bg: #1a2e44;
+  --sidebar-text: #c8d8e8;
+}
+
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── Sidebar ─────────────────────────────── */
+.sidebar {
+  min-height: 100vh;
+  background: var(--sidebar-bg);
+  width: 240px;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.sidebar .brand {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.sidebar .brand h5 { color: #fff; font-weight: 700; margin: 0; }
+.sidebar .brand small { color: var(--sidebar-text); font-size: .75rem; }
+
+.sidebar .nav-link {
+  color: var(--sidebar-text);
+  padding: .65rem 1rem;
+  border-radius: 6px;
+  margin: 2px 8px;
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
+
+.sidebar .nav-link i { font-size: 1.1rem; }
+
+/* ── Main content ────────────────────────── */
+.main-content {
+  margin-left: 240px;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+
+/* ── Cards ───────────────────────────────── */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.stat-card {
+  border-radius: 12px;
+  color: #fff;
+  padding: 1.25rem;
+}
+
+.stat-card .icon { font-size: 2.5rem; opacity: .8; }
+.stat-card .value { font-size: 2rem; font-weight: 700; }
+.stat-card .label { font-size: .85rem; opacity: .9; }
+
+/* ── Badges de estado ────────────────────── */
+.badge-ok      { background:#d1fae5; color:#065f46; }
+.badge-warning { background:#fef9c3; color:#854d0e; }
+.badge-danger  { background:#fee2e2; color:#991b1b; }
+
+/* ── Tabla ───────────────────────────────── */
+.table thead th {
+  background: #f8fafc;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* ── Alertas vencimiento ─────────────────── */
+.expired   { background: #fff5f5 !important; }
+.near-exp  { background: #fffbeb !important; }
+
+/* ── Comprobante ─────────────────────────── */
+.comprobante {
+  max-width: 420px;
+  margin: auto;
+  border: 2px dashed #94a3b8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fff;
+  font-family: 'Courier New', monospace;
+}
