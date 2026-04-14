@@ -1,7 +1,6 @@
--- ============================================================
 --  SISTEMA DE GESTIÓN DE FARMACIA - BASE DE DATOS
 --  Escuela Superior La Pontificia
--- ============================================================
+
 
 CREATE DATABASE IF NOT EXISTS sistema_farmacia
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
