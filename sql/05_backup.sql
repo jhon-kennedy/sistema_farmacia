@@ -1,11 +1,8 @@
--- ============================================================
 --  BACKUP MANUAL - SISTEMA FARMACIA
 --  Ejecutar desde terminal:
 --  mysqldump -u root -p sistema_farmacia > backup_farmacia.sql
--- ============================================================
 
--- ── Script Shell para backup automático (Linux/Mac) ─────────
--- Guardar como: backup_farmacia.sh  y ejecutar: bash backup_farmacia.sh
+
 
 /*
 #!/bin/bash
