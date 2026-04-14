@@ -1,6 +1,5 @@
--- ============================================================
 --  PROCEDIMIENTOS ALMACENADOS - SISTEMA FARMACIA
--- ============================================================
+
 USE sistema_farmacia;
 
 DELIMITER $$
